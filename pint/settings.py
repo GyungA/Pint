@@ -20,13 +20,13 @@ env = environ.Env(
 )
 
 # Set the project base directory
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Take environment variables from .env file
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # False if not in os.environ because of casting above
-DEBUG = env('DEBUG')
+DEBUG = True
 
 # Raises Django's ImproperlyConfigured
 # exception if SECRET_KEY not in os.environ
