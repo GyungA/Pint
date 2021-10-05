@@ -1,0 +1,21 @@
+.footerLogo, .headerLogo {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footerLogo {
+    margin-top: 1rem;
+}
+
+.pintHeader {
+    style="text-algin:center;
+    margin: 2rem 0;
+}
+
+.pintFooter {
+    text-align:center;
+    margin-top:2rem;
+}
+
+.footerMenu {
+    font-size: .6rem;
+}5
